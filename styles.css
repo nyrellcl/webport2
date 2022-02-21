@@ -200,8 +200,13 @@ using the regular bullet points provided by <li> didn't suit well with the webpa
   
 }
 
-.project-1{
-  width: 100%;
+.project-1,
+.project-2.
+.project-3,
+.project-4,
+.project-5,
+.project-6{
+  margin: 30px;
 }
 
 project-2{
