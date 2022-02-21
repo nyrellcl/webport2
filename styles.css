@@ -1,1 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  line-height: 1.5;
+}
+h1{
+  color: #E6EDFA;
+}
+p{
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 10px;
+}
+figure{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+ul{
+  list-style: none;
+}
+h1{
+  font-size: 3.5rem;
+}
+a{
+  text-decoration: none;
+  color: #152C52; 
+}
+a:hover{
+  text-decoration: underline;
+}
+figcaption{
+  color:#152C52;
+}
+header{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 14px;
+  text-decoration: underline;
+}
+.nav-bar{
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #E6EDFA; 
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav-list{
+  display: flex;
+  margin-right: 1.5rem;
+}
+.nav-list a{
+  display: block;
+  font-size: 20px;
+  padding: 1.5rem;
+}
+
+.nav-list a:hover{
+  color: #E6EDFA;
+  background-color: #152C52;
+  transition: background-color .5s;
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #152C52;
+}
+
+.welcome > p{
+  font-size: 2rem;
+  color: #E6EDFA;
+}
+
+.about-grid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "about skills"
+    ;
+}
+
+ #about{
+  grid-area: about;
+  width: 100%;
+  display: grid;
+  margin: 15px auto;
+  justify-content: flex-start;
+}
+#skills{
+  grid-area: skills;
+  width: 100%;
+  height: 0;
+  display: grid;
+  margin: 15px auto;
+  justify-content: flex-start;
+}
+.skill-list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.skill-list > li{
+  padding: 18px;
+  padding: 16px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+/*I wanted to customize my own bullet points for the skills list.
+using the regular bullet points provided by <li> didn't suit well with the webpage*/
+.skill-list > li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #152C52;
+  margin: 1em;
+  display: inline;
+  margin-left: -1em;
+}
+.about-title > p{
+  text-align: left;
+}
+.about-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper >  img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content{
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255,255,255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content > a{
+  color: black;
+  text-decoration: underline;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content{
+  transition: 200ms ease-in-out;
+}
+/*gives the blur effect when user hovers on the projects*/
+.img-wrapper:hover > img.blur{
+  filter: blur(5px);
+}
+.img-wrapper >.content.fade{
+  opacity: 0;
+}
+
+.img-wrapper:hover >.content.fade{
+  opacity: 1;
+}
+
+
+.proj-grid{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  grid-gap: 10px;
+  margin: 30px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.20fr 1fr 1fr;
+  grid-template-areas:
+    "projects-section projects-section projects-section"
+    "project-1 project-2 project-3"
+    "project-4 project-5 project-6";
+}
+.projects-section{
+  grid-area: projects-section;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  
+}
+
+.project-1{
+  grid-area: project-1;
+  width: 100%;
+}
+
+project-2{
+  grid-area: project-2;
+  width: 100%;
+}
+
+project-3{
+  grid-area: project-3;
+  width: 100%;
+}
+project-4{
+  grid-area: project-4;
+  width: 100%;
+}
+
+project-5{
+  grid-area: project-5;
+  width: 100%;
+}
+
+project-6{
+  grid-area: project-6;
+  width: 100%;
+}
+.proj-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  text-decoration: underline;
+  margin: 5rem auto 2rem auto;
+  font-size: 2.1rem;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #E6EDFA;
+  width: 100%;
+}
+.contact-details{
+  width: 100%;
+}
+.contact-details > p{
+  display: inline-block;
+  padding: 10px 30px;
+}
+.contact-details > h2{
+  color: #152C52;
+  font-size: 2.3rem;
+}
+.contacts-img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.contact-links{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.contact-title{
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  .welcome > p{
+    text-align: center;
+  }
+  .about-grid{
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "about"
+    "skills"
+    ;
+}
+  #skills{
+    height: 100%;
+  }
+ 
+  .proj-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+      "projects-section"
+      "project-1"
+      "project-2"
+      "project-3"
+      "project-4"
+      "project-5"
+      "project-6";
+    width: 95%; /*This will prevent the images from taking up the whole width of
+                 the users screen. Allows for more separation of images*/
+    text-align: center;
+      
+  }
+  h1{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .nav-list{
+  display: none;
+ 
+}
+}
