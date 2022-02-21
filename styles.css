@@ -273,9 +273,12 @@ img{
     "about"
     "skills"
     ;
-}
+  }
   #skills{
     height: 100%;
+  }
+  .projects-section{
+    margin: 15px 10px;
   }
   
   .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
