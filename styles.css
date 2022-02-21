@@ -191,24 +191,10 @@ using the regular bullet points provided by <li> didn't suit well with the webpa
 }
 
 
-.proj-grid{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  grid-gap: 10px;
-  margin: 30px auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.20fr 1fr 1fr;
-  grid-template-areas:
-    "projects-section projects-section projects-section"
-    "project-1 project-2 project-3"
-    "project-4 project-5 project-6";
-}
 .projects-section{
-  grid-area: projects-section;
-  display: grid;
+  display: inline-flex;
   justify-content: center;
+  width: 100%;
   align-content: center;
   margin-top: 15px;
   
