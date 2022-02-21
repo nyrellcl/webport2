@@ -277,23 +277,10 @@ img{
   #skills{
     height: 100%;
   }
- 
-  .proj-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:
-      "projects-section"
-      "project-1"
-      "project-2"
-      "project-3"
-      "project-4"
-      "project-5"
-      "project-6";
-    width: 95%; /*This will prevent the images from taking up the whole width of
-                 the users screen. Allows for more separation of images*/
-    text-align: center;
-      
-  }
+  
+  .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    margin: 30px 10px;
+    width: 100%;
   h1{
     font-size: 3.3rem;
     text-align: center;
