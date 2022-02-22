@@ -58,6 +58,10 @@ button{
   justify-content: center;
   height: 50px;
 }
+.btn-cont{
+  width: 100%;
+  display: flex;
+}
 .btn{
   width: 100%;
   display: flex;
