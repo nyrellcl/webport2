@@ -52,8 +52,6 @@ header{
 button{
   display: inline-flex;
   align-items: center;
-  cursor: pointer;
-  background-color: white;
   height: 50px;
 }
 .btn-cont{
@@ -62,7 +60,11 @@ button{
 }
 .btn{
   width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
   justify-content: center;
+  background-color: white;
+  font-size: 1.1rem;
 }
 .nav-bar{
   width: 100%;
@@ -162,7 +164,7 @@ using the regular bullet points provided by <li> didn't suit well with the webpa
 }
 
 
-.img-wrapper{
+/*.img-wrapper{
   position: relative;
   overflow: hidden;
 }
@@ -203,7 +205,7 @@ using the regular bullet points provided by <li> didn't suit well with the webpa
 
 .img-wrapper:hover >.content.fade{
   opacity: 1;
-}
+}*/
 
 
 .projects-section{
