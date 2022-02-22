@@ -337,9 +337,11 @@ img{
   }
   #skills{
     height: 100%;
+    padding: 1.5rem;
   }
   .projects-section{
-    margin: 15px 10px;
+    margin: 15px auto;
+    text-align: center;
   }
   
   .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
