@@ -66,6 +66,11 @@ button{
   justify-content: center;
   background-color: white;
   font-size: 1.1rem;
+  color: #152C52;
+}
+.btn:hover{
+  background-color: #E6EDFA;
+  transition: background-color 0.25s;
 }
 .nav-bar{
   width: 100%;
