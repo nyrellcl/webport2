@@ -52,10 +52,8 @@ header{
 button{
   display: inline-flex;
   align-items: center;
-  width: 150px;
   cursor: pointer;
   background-color: white;
-  justify-content: center;
   height: 50px;
 }
 .btn-cont{
@@ -64,7 +62,6 @@ button{
 }
 .btn{
   width: 100%;
-  display: flex;
   justify-content: center;
 }
 .nav-bar{
