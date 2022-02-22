@@ -209,7 +209,9 @@ gives the blur effect when user hovers on the projects
 }*/
 
 .proj-cont{
-  margin: 70px;
+  background-color: violet;
+  padding: 3.6rem 2.5rem;
+  
 }
 .projects-section{
   display: inline-flex;
@@ -241,9 +243,10 @@ gives the blur effect when user hovers on the projects
 }
 
 img{
-  display: block;
+  display: flex;
   width: 100%;
   border-radius: 10px;
+  margin: 25px auto;
 }
 
 .contact-info{
