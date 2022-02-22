@@ -341,7 +341,9 @@ img{
   }
   #skills{
     height: 100%;
-    padding: 1.5rem;
+  }
+  #skills > ul{
+   padding: 1.5rem;
   }
   .projects-section{
     margin: 15px auto;
