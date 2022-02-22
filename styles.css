@@ -208,7 +208,9 @@ gives the blur effect when user hovers on the projects
   opacity: 1;
 }*/
 
-
+.proj-cont{
+  margin: 70px;
+}
 .projects-section{
   display: inline-flex;
   justify-content: center;
