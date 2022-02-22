@@ -50,8 +50,13 @@ header{
   text-decoration: underline;
 }
 button{
-  display: inline-flex;
+  display: inline;
+  align-items: center;
+  width: 150px;
+  cursor: pointer;
+  background-color: white;
   justify-content: flex-start;
+  height: 50px;
 }
 .btn{
 }
