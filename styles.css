@@ -224,7 +224,8 @@ gives the blur effect when user hovers on the projects
 .project-4,
 .project-5,
 .project-6{
-  margin: 70px;
+  margin: 70px auto;
+  width: 100%;
 }
 
 .proj-title{
@@ -240,7 +241,6 @@ gives the blur effect when user hovers on the projects
 img{
   display: block;
   width: 100%;
-  height: 100%;
   border-radius: 10px;
 }
 
