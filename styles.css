@@ -49,6 +49,12 @@ header{
   margin: 14px;
   text-decoration: underline;
 }
+button{
+  display: inline-flex;
+  justify-content: flex-start;
+}
+.btn{
+}
 .nav-bar{
   width: 100%;
   position: sticky;
