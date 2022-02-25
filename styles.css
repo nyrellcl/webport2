@@ -69,7 +69,9 @@ button{
   margin: 6px 0;
   transition: 0.4s;
 }
-
+.ham-container{
+  background-color: #152C52;
+}
 .open .bar1{
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
   transform: rotate(-45deg) translate(-6px, 6px);
