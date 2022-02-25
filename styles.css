@@ -83,7 +83,7 @@ button{
   -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
-.open mobile-menu{
+.open .mobile-menu{
   display: flex;
   flex-direction: column;/*stacks each link on top of each other on mobile*/
   align-items: center;
@@ -365,13 +365,10 @@ img{
     text-align: center;
     margin: 20px auto;
   }
-  /*.nav-bar{
+  .nav-bar{
     display: none;
-    }*/
+    }
   
-  nav{
-    display: none;
-  }
   
   #ham-icon{
     display: block;
